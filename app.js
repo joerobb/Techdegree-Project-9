@@ -41,27 +41,69 @@ var chart = new Chart(ctx, {
 
                  }
              }],
-
        }
-
-
-
     }
 });
 
-var ctx = document.getElementById('barChart').getContext('2d');
-var barChart = new Chart(ctx, {
- "type": "bar", "data":
+var ctb = document.getElementById('barChart').getContext('2d');
+var barChart = new Chart(ctb, {
+ "type": "bar",
+  "data":
 { "labels":
 [ "S", "M", "T", "W", "T", "F", "S", ],
 "datasets": [{ "label": "My First Dataset", "data":
 [65, 59, 80, 81, 56, 55, 40], "fill": false,
-"backgroundColor": [ "rgba(255, 99, 132, 0.2)", "rgba(255, 159, 64, 0.2)", "rgba(255, 205, 86, 0.2)", "rgba(75, 192, 192, 0.2)", "rgba(54, 162, 235, 0.2)", "rgba(153, 102, 255, 0.2)", "rgba(201, 203, 207, 0.2)" ],
-"borderColor": [ "rgb(255, 99, 132)", "rgb(255, 159, 64)", "rgb(255, 205, 86)", "rgb(75, 192, 192)", "rgb(54, 162, 235)", "rgb(153, 102, 255)", "rgb(201, 203, 207)" ],
+"backgroundColor": [ "rgba(54, 162, 235, 0.2)", "rgba(54, 162, 235, 0.2)", "rgba(54, 162, 235, 0.2)", "rgba(54, 162, 235, 0.2)", "rgba(54, 162, 235, 0.2)", "rgba(54, 162, 235, 0.2)", "rgba(54, 162, 235, 0.2)" ],
+"borderColor": [ "rgb(0, 107, 179)", "rgb(0, 107, 179)", "rgb(0, 107, 179)", "rgb(0, 107, 179)", "rgb(0, 107, 179)", "rgb(0, 107, 179)", "rgb(0, 107, 179)" ],
 "borderWidth": 1 }] },
 "options": {
+  legend: {
+    display: false
+  },
   "scales":
   { "yAxes":
   [{ "ticks":
   { "beginAtZero": true }
 }] } } });
+
+ var ctd = document.getElementById('doughnutChart').getContext('2d');
+ var myDoughnutChart = new Chart(ctd, {
+    "type": "doughnut",
+   "data": {
+      "labels": [ "Red", "Blue", "Yellow" ],
+      "datasets": [{ "label": "My First Dataset",
+      "data": [300, 50, 100],
+       "backgroundColor": [ "rgb(255, 99, 132)", "rgb(54, 162, 235)", "rgb(255, 205, 86)" ]
+     }]
+   },
+
+  "options": {
+    responsive: true,
+   layout: {
+           padding: {
+               left: 0,
+               right: 50,
+               top: 0,
+               bottom: 0
+           }
+         },
+   legend: {
+     position: 'right',
+     display: true,
+     labels: {
+           fontColor: '#888',
+           fontSize: 16,
+           boxWidth: 20,
+           padding: 25
+         },
+         layout: {
+                 margin: {
+                     left: 0,
+                     right: 50,
+                     top: 0,
+                     bottom: 20
+                 }
+               },
+  }
+}
+ });

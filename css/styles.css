@@ -123,7 +123,7 @@ input#search {
   width: 40%;
   margin:20px;
   float: right;
-  padding: 10px;
+ padding: 10px;
  background-image: url("../icons/magnify.png");
  background-size: 20px 20px;
  background-repeat: no-repeat;
@@ -166,10 +166,20 @@ flex-direction: row;
   flex-direction: row;
 }
 
+/* Charts */
+
 .traffic-title {
 margin-right: auto;
 margin-left: 0;
 margin-top: 0;
+}
+
+.barTitle {
+float: left;
+}
+
+.mobileTitle {
+float: left;
 }
 
 .close {
@@ -183,6 +193,35 @@ margin-top: 0;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+}
+
+.twoCharts {
+  margin: 0 20px;
+  margin-left: 0;
+  display: block;
+}
+
+.barChart {
+  float:left;
+  width: 50%;
+  border-top: solid grey;
+  border-right: solid grey;
+  border-bottom: solid grey;
+}
+
+.doughnut {
+  float:right;
+  width: 50%;
+  border-top: solid grey;
+  border-bottom: solid grey;
+}
+
+button {
+  border: 1px solid transparent;
+  padding: 5px;
+  color: #ffffff;
+  background-color: green;
+  border-radius: 5px;
 }
 
 
