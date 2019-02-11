@@ -52,14 +52,22 @@ var barChart = new Chart(ctb, {
 { "labels":
 [ "S", "M", "T", "W", "T", "F", "S", ],
 "datasets": [{ "label": "My First Dataset", "data":
-[65, 59, 80, 81, 56, 55, 40], "fill": false,
-"backgroundColor": [ "rgba(54, 162, 235, 0.2)", "rgba(54, 162, 235, 0.2)", "rgba(54, 162, 235, 0.2)", "rgba(54, 162, 235, 0.2)", "rgba(54, 162, 235, 0.2)", "rgba(54, 162, 235, 0.2)", "rgba(54, 162, 235, 0.2)" ],
+[50, 75, 150, 100, 200, 175, 75], "fill": false,
+"backgroundColor": [ "rgb(0, 107, 179)", "rgb(0, 107, 179)", "rgb(0, 107, 179)", "rgb(0, 107, 179)", "rgb(0, 107, 179)", "rgb(0, 107, 179)", "rgb(0, 107, 179)" ],
 "borderColor": [ "rgb(0, 107, 179)", "rgb(0, 107, 179)", "rgb(0, 107, 179)", "rgb(0, 107, 179)", "rgb(0, 107, 179)", "rgb(0, 107, 179)", "rgb(0, 107, 179)" ],
 "borderWidth": 1 }] },
 "options": {
   legend: {
     display: false
   },
+  layout: {
+          padding: {
+              left: 15,
+              right: 15,
+              top: 15,
+              bottom: 15
+          }
+        },
   "scales":
   { "yAxes":
   [{ "ticks":
@@ -70,7 +78,7 @@ var barChart = new Chart(ctb, {
  var myDoughnutChart = new Chart(ctd, {
     "type": "doughnut",
    "data": {
-      "labels": [ "Red", "Blue", "Yellow" ],
+      "labels": [ "Phones", "Tablets", "Desktop" ],
       "datasets": [{ "label": "My First Dataset",
       "data": [300, 50, 100],
        "backgroundColor": [ "rgb(255, 99, 132)", "rgb(54, 162, 235)", "rgb(255, 205, 86)" ]
@@ -81,25 +89,25 @@ var barChart = new Chart(ctb, {
     responsive: true,
    layout: {
            padding: {
-               left: 0,
-               right: 50,
-               top: 0,
-               bottom: 0
+               left: 15,
+               right: 15,
+               top: 15,
+               bottom: 15
            }
          },
    legend: {
      position: 'right',
      display: true,
      labels: {
-           fontColor: '#888',
+           fontColor: '#000',
            fontSize: 16,
            boxWidth: 20,
-           padding: 25
+           padding: 5
          },
          layout: {
                  margin: {
-                     left: 0,
-                     right: 50,
+                     left: -20,
+                     right: 20,
                      top: 0,
                      bottom: 20
                  }
