@@ -91,7 +91,7 @@ nav {
 .visits:hover,
 .settings:hover {
   fill: #ffffff;
-  border-left: #1aff8c solid;
+  border-left: #1aff8c solid thin;
 }
 
 .bell:hover {
@@ -129,7 +129,7 @@ input#search {
  background-repeat: no-repeat;
  background-position: 98% 50%;
  border-radius: 5px;
- border: solid grey;
+ border: solid grey thin;
 }
 
 input#search:focus{
@@ -298,9 +298,38 @@ fill: #ffffff;
 /* Members */
 
 .members-title {
-float:left;
-
+margin-right: auto;
 }
+
+.memberBox {
+  display: flex;
+  flex-direction: row;
+}
+
+.member-info {
+  display: flex;
+  flex-direction: column;
+  margin-right: auto;
+}
+
+.member-name {
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.member-email {
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 20px;
+}
+
+.date {
+  margin-left: auto;
+}
+
+
 
 
 
