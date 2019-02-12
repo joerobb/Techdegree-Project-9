@@ -245,9 +245,32 @@ button {
 }
 
 .socialBox {
-  height: 100px;
-  width: 250px;
   border: solid grey thin;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+
+.stats {
+  display: flex;
+  flex-direction: column;
+}
+
+.stat-title {
+  margin-bottom: 0;
+  margin-right: auto;
+  float: left;
+  padding-left: 0;
+}
+
+
+.stat-number {
+  margin: 0 20px 20px 20px;
+  padding: 0;
+  float:left;
+  font-size: 2em;
+  font-weight: 50;
 }
 
 .social {
@@ -260,9 +283,11 @@ button {
 }
 
 .twitterIcon {
-height: 50px;
-width: 50px;
+height: 30px;
+width: 30px;
 }
+
+
 
 
 /* body {
