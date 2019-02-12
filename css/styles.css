@@ -64,7 +64,6 @@ margin:auto 10px;
 
 nav {
   background-color: purple;
-  height: 100%;
   float: left;
   display:flex;
   flex-direction: column;
@@ -196,8 +195,7 @@ float: left;
 }
 
 .twoCharts {
-  margin: 0 20px;
-  margin-left: 0;
+  margin: 0;
   display: block;
 }
 
@@ -224,6 +222,47 @@ button {
   border-radius: 5px;
 }
 
+/* Socials */
+
+.socialContainer {
+  margin: 0;
+  border: solid grey thin;
+  border-top: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.threeBox {
+  display: flex;
+  flex-direction: row;
+  border-top: none;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.social-title {
+  margin-right: auto;
+}
+
+.socialBox {
+  height: 100px;
+  width: 250px;
+  border: solid grey thin;
+}
+
+.social {
+  border-radius: 50%;
+  background-color: rgba(54, 162, 235, 0.2);
+  padding: 20px;
+  margin: 10px;
+  width: 75px;
+  height: 75px;
+}
+
+.twitterIcon {
+height: 50px;
+width: 50px;
+}
 
 
 /* body {
