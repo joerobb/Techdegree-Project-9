@@ -71,7 +71,7 @@ nav {
   display:flex;
   flex-direction: column;
   flex-wrap: wrap;
-  min-height: 1400px;
+  min-height: 2000px;
   width: 90px;
 }
 
@@ -177,8 +177,6 @@ margin-top: 0;
 .barTitle, .mobileTitle {
 float: left;
 }
-
-
 
 .close {
   float:right;
@@ -375,6 +373,36 @@ h6 {
   height: 30px;
   width: 30px;
   margin:5px;
+}
+
+.messageuser {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 20px;
+}
+
+#usersearch {
+margin:20px 0;
+padding: 10px;
+border-radius: 5px;
+border: solid grey thin;
+}
+
+#messagetext {
+  margin:10px 0;
+  padding-top: 10px;
+  padding-bottom: 80px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 5px;
+  border: solid grey thin;
+}
+
+#submit {
+background-color: rgb(0, 107, 179);
+padding: 15px 10px;
+margin-top: 10px;
+margin-bottom: 10px;
 }
 
 
