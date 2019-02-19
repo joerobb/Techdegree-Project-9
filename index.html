@@ -255,16 +255,34 @@
       </div>
       <div class= "memberboxR">
       <h4 class="members-title">SETTINGS</h4>
-
-
-
+      <div class="notifications">
+        <h5>Send Email Notifications</h5>
+        <label class="switch">
+          <input type="checkbox">
+          <span class="slider round"></span>
+        </label>
+    </div>
+    <div class="notifications">
+      <h5>Set Profile to Public</h5>
+      <label class="switch">
+        <input type="checkbox">
+        <span class="slider round"></span>
+      </label>
+  </div>
+     <select  id="state" name="user_state" style='color: #8a97a0'>
+				<option value="" disabled selected>Select Timezone:</option>
+				<option value="London">London</option>
+				<option value="New York">New York</option>
+				<option value="Sydney">Sydney</option>
+				<option value="Paris">Paris</option>
+				<option value="Montreal">Montreal</option>
+		</select>
+    <div class="btns">
+    <button id="savebtn">SAVE</button>
+    <button id="cancelbtn">CANCEL</button>
+    </div>
       </div>
       </div>
-      </div>
-  <footer>
-  </footer>
-
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
     <script type="text/javascript" src="app.js"></script>
   </body>

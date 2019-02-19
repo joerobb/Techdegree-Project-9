@@ -13,7 +13,7 @@
 body {
   font-family: 'Open Sans', sans-serif;
   margin: 0;
-  height: 100%;
+  min-height: 100vh;
 }
 
 header {
@@ -71,7 +71,7 @@ nav {
   display:flex;
   flex-direction: column;
   flex-wrap: wrap;
-  min-height: 2000px;
+  min-height: 1750px;
   width: 90px;
 }
 
@@ -403,6 +403,135 @@ background-color: rgb(0, 107, 179);
 padding: 15px 10px;
 margin-top: 10px;
 margin-bottom: 10px;
+}
+
+.notifications {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 20px 20px;
+  width: 52%;
+}
+
+h5 {
+  margin-right: 40px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 90px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(56px);
+  -ms-transform: translateX(56px);
+  transform: translateX(56px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.slider:after
+{
+ content:'OFF';
+ color: white;
+ display: block;
+ position: absolute;
+ transform: translate(-50%,-50%);
+ top: 50%;
+ left: 50%;
+ font-size: 10px;
+ font-family: Verdana, sans-serif;
+}
+
+input:checked + .slider:after
+{
+  content:'ON';
+}
+
+#state {
+  margin-top: 18px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 20px;
+  border-radius: 5px;
+  border: solid grey thin;
+  height: 40px;
+}
+
+#savebtn {
+  background-color: rgb(0, 107, 179);
+  padding: 15px 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 48%;
+}
+
+#cancelbtn {
+  background-color: lightgrey;
+  padding: 15px 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 48%;
+}
+
+.btns {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 10px 20px;
+  width: 93%;
 }
 
 
