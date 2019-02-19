@@ -10,8 +10,6 @@
   box-sizing: border-box;
 }
 
-
-
 body {
   font-family: 'Open Sans', sans-serif;
   margin: 0;
@@ -39,6 +37,10 @@ flex-direction: column;
 justify-content: space-around;
 height: 100%;
 text-align: center;
+}
+
+a {
+  text-decoration: none;
 }
 
 .bell {
@@ -267,6 +269,7 @@ button {
 
 .stat-number {
   margin: 0 20px 20px 20px;
+  margin-left: 0;
   padding: 0;
   float:left;
   font-size: 2.2em;
@@ -298,35 +301,80 @@ fill: #ffffff;
 /* Members */
 
 .members-title {
+margin-left: 20px;
 margin-right: auto;
+margin-bottom: 0;
 }
 
 .memberBox {
   display: flex;
   flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
+  overflow: hidden;
+  border-bottom: grey solid thin;
+}
+
+.memberboxL {
+  display: flex;
+  flex-direction: column;
+  margin-left: 0;
+  float: left;
+  width: 50%;
+  border-right: solid grey thin;
+}
+
+.memberboxR {
+  display: flex;
+  flex-direction: column;
+  margin-right: 0;
+  float: left;
+  width: 50%;
 }
 
 .member-info {
   display: flex;
-  flex-direction: column;
-  margin-right: auto;
+  flex-direction: row;
+  margin: 10px 20px;
+  border-bottom: solid grey thin;
+}
+
+.member-info-last {
+  display: flex;
+  flex-direction: row;
+  margin: 10px 20px;
 }
 
 .member-name {
-    margin-right: auto;
-    margin-top: 0;
-    margin-bottom: 0;
+  font-weight: 400;
 }
 
-.member-email {
-  margin-right: auto;
-  margin-top: 0;
-  margin-bottom: 0;
-  margin-left: 20px;
+h6 {
+  margin-top: 5px;
+  margin-left: 0;
+  margin-right: 30px;
+  margin-right:auto;
+  text-align: left;
 }
 
 .date {
   margin-left: auto;
+  margin-right: 0;
+  margin-top: 10px;
+}
+
+.date-arrow {
+  margin-left: auto;
+  margin-right: 0;
+  font-size: 20px;
+  margin-bottom: 0;
+}
+
+.mbrimg {
+  border-radius: 50px;
+  height: 30px;
+  width: 30px;
+  margin:5px;
 }
 
 
