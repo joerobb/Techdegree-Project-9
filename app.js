@@ -115,3 +115,33 @@ var barChart = new Chart(ctb, {
   }
 }
  });
+
+
+
+const messageButton = document.getElementById('submit');
+
+messageButton.addEventListener('click', (e) => {
+
+  let input = document.getElementById('usersearch').value;
+  let textarea = document.getElementById('messagetext').value;
+
+  e.preventDefault();
+
+  if(input == null || input == "") {
+    console.log(" missing user");
+    submit.textContent = 'PLEASE ENTER USER NAME';
+    submit.style.backgroundColor = '#FF0000';
+    return;
+  } else if(textarea == null || textarea == "") {
+  console.log(" missing message");
+  submit.textContent = 'PLEASE ENTER MESSAGE';
+  submit.style.backgroundColor = '#FF0000';
+  return;
+  } else if(input != "" && textarea != "") {
+    console.log("working!");
+    document.getElementById('usersearch').value= ' ';
+    document.getElementById('messagetext').value = ' ';
+    submit.textContent = 'MESSAGE SENT TO USER';
+    submit.style.backgroundColor = '#00cc66';
+  }
+  });

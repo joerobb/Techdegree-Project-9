@@ -213,10 +213,11 @@ float: left;
 
 button {
   border: 1px solid transparent;
-  padding: 5px;
+  padding: 5px 25px;
   color: #ffffff;
-  background-color: green;
+  background-color: #00cc66;
   border-radius: 5px;
+  margin: 5px 10px;
 }
 
 /* Socials */
@@ -401,8 +402,7 @@ border: solid grey thin;
 #submit {
 background-color: rgb(0, 107, 179);
 padding: 15px 10px;
-margin-top: 10px;
-margin-bottom: 10px;
+margin: 10px 0;
 }
 
 .notifications {
@@ -513,16 +513,14 @@ input:checked + .slider:after
 #savebtn {
   background-color: rgb(0, 107, 179);
   padding: 15px 10px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin: 10px 0;
   width: 48%;
 }
 
 #cancelbtn {
   background-color: lightgrey;
   padding: 15px 10px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin: 10px 0;
   width: 48%;
 }
 
