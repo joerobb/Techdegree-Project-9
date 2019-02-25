@@ -70,7 +70,7 @@ nav {
   display:flex;
   flex-direction: column;
   flex-wrap: wrap;
-  min-height: 2750px;
+  min-height: 2500px;
   width: 55px;
 }
 
@@ -588,7 +588,7 @@ input:checked + .slider:after
   }
 
   nav {
-    min-height: 3500px;
+    min-height: 3300px;
   }
 
 }
