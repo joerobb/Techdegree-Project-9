@@ -1,10 +1,10 @@
 const alert = document.querySelector('div.alert');
 const x = document.querySelector('h4.close');
-const circle = document.querySelector('circle.circle')
+const circle = document.querySelector('circle.circle');
 
 x.addEventListener('click', () => {
   alert.style.display = 'none';
-  circle.style.display = 'none'
+  circle.style.display = 'none';
 });
 
 
@@ -21,26 +21,27 @@ var chart = new Chart(ctx, {
             backgroundColor: 'rgba(54, 162, 235, 0.2)',
             borderColor: 'rgb(0, 107, 179)',
             lineTension: 0,
-            data: [500, 1000, 750, 1250, 1750, 1250, 1500, 1000, 1500, 2000, 1500, 2000],
+            data: [0, 750, 1250, 1000, 1500, 2000, 1500, 1250, 1750, 2250, 1750, 2250],
             pointBackgroundColor: 'rgb(255, 255, 255)',
-            pointRadius: 5,
+            pointRadius: 4,
         }]
     },
 
     // Configuration options go here
     options: {
+      responsive: true,
       legend: {
         display: false
       },
 
        scales: {
          yAxes: [{
-                 ticks: {
-                     //beginAtZero:false,
-                     scaleBeginAtZero : false
-
-                 }
+                ticks: {
+                  max: 2500,
+                  min: 0,
+                  stepSize: 500}
              }],
+
        }
     }
 });
@@ -57,6 +58,16 @@ var barChart = new Chart(ctb, {
 "borderColor": [ "rgb(0, 107, 179)", "rgb(0, 107, 179)", "rgb(0, 107, 179)", "rgb(0, 107, 179)", "rgb(0, 107, 179)", "rgb(0, 107, 179)", "rgb(0, 107, 179)" ],
 "borderWidth": 1 }] },
 "options": {
+  responsive: true,
+ layout: {
+         padding: {
+             left: 15,
+             right: 15,
+             top: 15,
+             bottom: 20
+           }
+},
+
   legend: {
     display: false
   },
@@ -65,7 +76,7 @@ var barChart = new Chart(ctb, {
               left: 15,
               right: 15,
               top: 15,
-              bottom: 15
+              bottom: 20
           }
         },
   "scales":
@@ -90,9 +101,10 @@ var barChart = new Chart(ctb, {
    layout: {
            padding: {
                left: 15,
-               right: 15,
+               right: 10,
                top: 15,
-               bottom: 15
+               bottom: 20
+
            }
          },
    legend: {
@@ -100,13 +112,13 @@ var barChart = new Chart(ctb, {
      display: true,
      labels: {
            fontColor: '#000',
-           fontSize: 16,
-           boxWidth: 20,
+           fontSize: 10,
+           boxWidth: 15,
            padding: 5
          },
          layout: {
                  margin: {
-                     left: -20,
+                     left: -30,
                      right: 20,
                      top: 0,
                      bottom: 20

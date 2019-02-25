@@ -14,21 +14,20 @@ body {
   font-family: 'Open Sans', sans-serif;
   margin: 0;
   min-height: 100vh;
+  min-width: 280px;
 }
 
 header {
-background-color: navy;
-color: white;
+background-color: rgb(0, 107, 179);
+color: #fff;
 padding-left: 10px;
 display:flex;
 flex-direction: row;
 flex-wrap: wrap;
-justify-content: space-between;
 }
 
 h1 {
-margin-right: auto;
-font-weight: 50;
+font-size: 20px;
 }
 
 .container {
@@ -44,35 +43,35 @@ a {
 }
 
 .bell {
-height: 50px;
-width: 50px;
-margin:auto 10px;
-border-right: solid white;
+height: 40px;
+width: 40px;
+margin:auto 5px;
+border-right: solid #fff;
 border-right-width: thin;
-padding-right: 20px;
-fill: white;
+padding-right: 15px;
+fill: #ffffff;
 }
 
 
 .profileImg {
 border-radius: 50px;
-height: 30px;
-width: 30px;
+height: 20px;
+width: 20px;
 margin:auto 5px;
 }
 
 p {
-margin:auto 10px;
+margin:auto 3px;
 }
 
 nav {
-  background-color: purple;
+  background-color: #003d66;
   float: left;
   display:flex;
   flex-direction: column;
   flex-wrap: wrap;
-  min-height: 1750px;
-  width: 90px;
+  min-height: 2750px;
+  width: 55px;
 }
 
 .dashboard,
@@ -86,6 +85,7 @@ nav {
   padding-top: 10px;
   padding-bottom: 10px;
   padding-right: 20px;
+  fill: #bfbfbf;
 }
 
 .dashboard:hover,
@@ -107,31 +107,32 @@ nav {
 }
 
 .dash {
-  margin-right: 20px;
+  margin-right: 10px;
 }
 
 h2 {
   padding-left: 20px;
   font-weight: normal;
+  font-size: 20px;
 }
 
 .topSearch {
-border-left: solid grey;
-border-bottom: solid grey;
-width: 86%;
+border-left: solid #666666 thin;
+border-bottom: solid #666666 thin;
+width: 90%;
+background-color: rgba(54, 162, 235, 0.05);
 }
 
 input#search {
-  width: 40%;
-  margin:20px;
-  float: right;
+  width: 80%;
+  margin:10px;
  padding: 10px;
  background-image: url("../icons/magnify.png");
  background-size: 20px 20px;
  background-repeat: no-repeat;
  background-position: 98% 50%;
  border-radius: 5px;
- border: solid grey thin;
+ border: solid #666666 thin;
 }
 
 input#search:focus{
@@ -145,33 +146,39 @@ h4 {
 
 
 .alert {
-background-color: rgb(0, 107, 179);
+background-color: #ff0000;
 color: white;
 margin-top: 20px;
 border-radius: 5px;
 margin-left: 20px;
-margin-top: 20px;
+margin-top: 10px;
 margin-right: 20px;
 display: flex;
 flex-direction: row;
+padding: 0;
+font-size: 15px;
 }
 
 .TrafficButtons {
-  margin-top: 20px;
+  margin-top: 5px;
   border-radius: 5px;
   margin-left: 20px;
   margin-top: 20px;
   margin-right: 20px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
+
+button {
+  width: 90%;
+}
+
 
 /* Charts */
 
 .traffic-title {
 margin-right: auto;
-margin-left: 0;
-margin-top: 0;
+margin-left: 5px;
 }
 
 .barTitle, .mobileTitle {
@@ -185,10 +192,11 @@ float: left;
 }
 
 .lineChart {
-  margin: 0 20px;
+  margin: 20px 20px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  padding: 0;
 }
 
 .twoCharts {
@@ -197,43 +205,50 @@ float: left;
 }
 
 .barChart {
-  float:left;
-  width: 50%;
-  border-top: solid grey thin;
-  border-right: solid grey thin;
-  border-bottom: solid grey thin;
+  /* float:left;
+  width: 50%; */
+  border-top: solid #666666 thin;
+  /* border-right: solid #666666 thin; */
+  /* border-bottom: solid #666666 thin; */
+  padding: 10px 10px;
 }
 
 .doughnut {
-  float:right;
-  width: 50%;
-  border-top: solid grey thin;
-  border-bottom: solid grey thin;
+  /* float:right;
+  width: 50%; */
+  border-top: solid #666666 thin;
+  border-bottom: solid #666666 thin;
+  padding: 10px 10px;
 }
 
 button {
   border: 1px solid transparent;
   padding: 5px 25px;
+  color: #666666;
+  border-radius: 20px;
+  margin: 5px 10px;
+}
+
+button:hover {
   color: #ffffff;
   background-color: #00cc66;
-  border-radius: 5px;
-  margin: 5px 10px;
 }
 
 /* Socials */
 
 .socialContainer {
   margin: 0;
-  border: solid grey thin;
+  border: solid #666666 thin;
   border-top: none;
   border-left: none;
+  border-right: none;
   display: flex;
   flex-direction: column;
 }
 
 .threeBox {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   border-top: none;
   justify-content: space-around;
   padding: 10px;
@@ -245,11 +260,12 @@ button {
 }
 
 .socialBox {
-  border: solid grey thin;
+  border: solid #666666 thin;
   border-radius: 4px;
   display: flex;
   flex-direction: row;
   margin-bottom: 20px;
+  background-color: rgba(54, 162, 235, 0.05);
 }
 
 .stats {
@@ -272,7 +288,7 @@ button {
   padding: 0;
   float:left;
   font-size: 2.2em;
-  font-weight: 50;
+  font-weight: lighter;
 }
 
 .social {
@@ -307,41 +323,40 @@ margin-bottom: 0;
 
 .memberBox {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   width: 100%;
   justify-content: space-around;
   overflow: hidden;
-  border-bottom: grey solid thin;
+  border-bottom: #666666 solid thin;
 }
 
 .memberboxL {
   display: flex;
   flex-direction: column;
   margin-left: 0;
-  float: left;
-  width: 50%;
-  border-right: solid grey thin;
+  /* float: left; */
+  /* width: 50%; */
+  /* border-right: solid #666666 thin; */
 }
 
 .memberboxR {
   display: flex;
   flex-direction: column;
   margin-right: 0;
-  float: left;
-  width: 50%;
+  /* float: left; */
+  /* width: 50%; */
 }
 
 .member-info {
   display: flex;
   flex-direction: row;
   margin: 10px 20px;
-  border-bottom: solid grey thin;
+  margin-right: 20px;
+  border-bottom: solid #666666 thin;
 }
 
-.member-info-last {
-  display: flex;
-  flex-direction: row;
-  margin: 10px 20px;
+.last {
+  border-bottom: none;
 }
 
 .member-name {
@@ -357,14 +372,14 @@ h6 {
 }
 
 .date {
-  margin-left: auto;
-  margin-right: 0;
+  margin-left: 0;
+  margin-right: 10px;
   margin-top: 10px;
 }
 
 .date-arrow {
   margin-left: auto;
-  margin-right: 0;
+  margin-right: 5px;
   font-size: 20px;
   margin-bottom: 0;
 }
@@ -386,7 +401,8 @@ h6 {
 margin:20px 0;
 padding: 10px;
 border-radius: 5px;
-border: solid grey thin;
+border: solid #666666 thin;
+background-color: rgba(54, 162, 235, 0.05);
 }
 
 #messagetext {
@@ -396,27 +412,31 @@ border: solid grey thin;
   padding-left: 10px;
   padding-right: 10px;
   border-radius: 5px;
-  border: solid grey thin;
+  border: solid #666666 thin;
+  background-color: rgba(54, 162, 235, 0.05);
 }
 
 #submit {
 background-color: rgb(0, 107, 179);
 padding: 15px 10px;
 margin: 10px 0;
+border-radius: 5px;
+color: #fff;
+width: 100%;
 }
 
 .notifications {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin: 20px 20px;
-  width: 52%;
+  display: block;
 }
 
 h5 {
-  margin-right: 40px;
   margin-top: 10px;
   margin-bottom: 10px;
+  margin-left: 0;
+}
+
+.switchlabel {
+  margin-left: 0;
 }
 
 /* The switch - the box around the slider */
@@ -425,6 +445,7 @@ h5 {
   display: inline-block;
   width: 90px;
   height: 34px;
+  margin-left: 20px;
 }
 
 /* Hide default HTML checkbox */
@@ -506,76 +527,148 @@ input:checked + .slider:after
   margin-right: 20px;
   padding: 20px;
   border-radius: 5px;
-  border: solid grey thin;
+  border: solid #666666 thin;
   height: 40px;
+  background-color: rgba(54, 162, 235, 0.05);
 }
 
 #savebtn {
   background-color: rgb(0, 107, 179);
   padding: 15px 10px;
   margin: 10px 0;
+  margin-left: 10px;
   width: 48%;
+  border-radius: 5px;
+  color: #fff;
 }
 
 #cancelbtn {
   background-color: lightgrey;
   padding: 15px 10px;
-  margin: 10px 0;
+  margin: 10px;
+  margin-right: 10px;
   width: 48%;
+  border-radius: 5px;
+  color: #fff;
+
 }
 
 .btns {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  margin: 10px 20px;
-  width: 93%;
+  justify-content: space-around;
+  margin: 10px 10px;
+  width: 95%;
 }
 
+@media screen and (min-width: 320px) {
 
+  .bell {
+   width: 45px;
+   height: 45px;
+  }
 
+  .profileImg {
+    width: 30px;
+    height: 30px;
+  }
 
+  h1 {
+  margin-right: auto;
+  font-size: 20px;
+  }
 
+  input#search {
+    width: 55%;
+    float:right;
+  }
 
+  .dash {
+    margin-right: 20px;
+  }
 
-/* body {
-  justify-content: space-evenly;
-  flex-direction: column;
-  display: flex;
-  height: 100vh;
+  nav {
+    min-height: 3500px;
+  }
+
 }
 
-li, ol, ul {
-  padding: 0;
-  display: inline-block;
-}
+@media screen and (min-width: 768px) {
 
-h2 {
-  margin: 0;
-  text-transform: uppercase;
-  font-family: 'Open Sans', sans-serif;
-  font-size: var(--font-size-large);
-  margin: 0;
+  header {
+  justify-content: space-around;
+  }
+
+  input#search {
+    width: 40%;
+    float:right;
+  }
+
+.TrafficButtons {
+  flex-direction: row;
 }
 
 button {
-  margin: 6px;
-  border: 1px solid transparent;
-  padding: .5rem 1rem;
-  color: var(--color-keys);
-  font-size: var(--font-size-medium);
-  background-color: var(--color-keys-light);
-  border-radius: 5px;
-  -webkit-transition: var(--transition);
-  -o-transition: var(--transition);
-  transition: var(--transition);
+  width: auto;
 }
 
-.main-container {
+.traffic-title {
+margin-right: auto;
+margin-left: 0;
+margin-top: 0;
+}
+
+.barChart {
+  float:left;
+  width: 50%;
+  border-right: solid #666666 thin;
+  border-bottom: solid #666666 thin;
+}
+
+.doughnut {
+  float:right;
+  width: 50%;
+}
+
+.threeBox {
+  flex-direction: row;
+}
+
+.memberBox {
+  flex-direction: row;
+}
+
+.memberboxL {
+  float: left;
+  width: 50%;
+  border-right: solid #666666 thin;
+}
+
+
+.memberboxR {
+  float: left;
+  width: 50%;
+}
+
+nav {
+  min-height: 1950px;
+  width: 60px;
+}
+
+.date {
+  margin-left: auto;
+}
+
+.switch {
+  margin-left: 0;
+}
+
+.notifications {
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  height: 100%;
-  max-height: 900px;
-  text-align: center;
-} */
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 20px 20px;
+  width: 85%;
+}
+
+}
